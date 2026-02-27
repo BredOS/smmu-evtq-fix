@@ -1,0 +1,11 @@
+post_install() {
+    systemctl enable --now smmu-evtq-fix.service
+}
+
+post_upgrade() {
+    systemctl enable --now smmu-evtq-fix.service
+}
+
+post_remove() {
+    systemctl disable --now smmu-evtq-fix.service
+}

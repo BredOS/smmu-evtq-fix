@@ -16,6 +16,7 @@ source=(
   "LICENSE"
 )
 sha256sums=('SKIP' 'SKIP' 'SKIP')
+install=${pkgname}.install
 
 package() {
   install -d "$pkgdir/usr/bin" \
