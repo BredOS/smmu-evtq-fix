@@ -26,7 +26,6 @@ package() {
   install -m755 "smmu-evtq-fix.sh" "$pkgdir/usr/bin/smmu-evtq-fix"
 
   install -m644 "smmu-evtq-fix.service" "$pkgdir/usr/lib/systemd/system/smmu-evtq-fix.service"
-  sed -i 's|/usr/local/sbin/smmu-evtq-fix.sh|/usr/bin/smmu-evtq-fix|' "$pkgdir/usr/lib/systemd/system/smmu-evtq-fix.service"
 
   install -m644 "LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }

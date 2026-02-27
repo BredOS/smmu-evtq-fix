@@ -8,7 +8,7 @@ DefaultDependencies=no
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/smmu-evtq-fix.sh
+ExecStart=/usr/bin/smmu-evtq-fix
 RemainAfterExit=yes
 
 [Install]
