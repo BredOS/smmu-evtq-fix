@@ -8,16 +8,14 @@ arch=('aarch64')
 url="https://github.com/ErcinDedeoglu/orangepi-6plus-cix-sky1-smmu-fix"
 license=('MIT')
 
-depends=('bash' 'systemd')
-optdepends=('devmem2: required to write to SMMU registers (available from AUR)')
+depends=('bash' 'systemd' 'devmem')
 
 source=(
   "smmu-evtq-fix.sh"
   "smmu-evtq-fix.service"
-  "README.md"
   "LICENSE"
 )
-sha256sums=('SKIP' 'SKIP' 'SKIP' 'SKIP')
+sha256sums=('SKIP' 'SKIP' 'SKIP')
 
 package() {
   install -d "$pkgdir/usr/bin" \
